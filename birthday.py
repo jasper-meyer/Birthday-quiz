@@ -1,7 +1,7 @@
 """
 birthday.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: <Jasper Meyer>
+Credit: <will, brendan>
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -39,6 +39,25 @@ todaydate = datetime.today().day
 name = input("Hello, what is your name?")
 month = input("Hi {0}, what was the name of the month you were born in? " .format(name))
 year = input("And what year were you born in, {0}? " .format(name))
+day = input("And the day? ")
+month = month.lower()
+
+if month is december or january or february:
+    season = winter
+elif month is march or april or may:
+    season = spring
+elif month is june or july or august:
+    season = summer
+elif month is september or october or november:
+    season = fall
+
+if year is <= 1980:
+    era = Stone Age
+if year is 
+    
+
+
+
 
 
 
