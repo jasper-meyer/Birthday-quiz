@@ -60,11 +60,38 @@ elif int(year) >= 1980 and int(year) <= 1989:
 elif int(year) >= 1990 and int(year) <= 1999:
     era = "nineties"
 elif int(year) >= 2000:
-        era = "two thousands"
-        
+    era = "two thousands"
 
+if todaymonth ==1:
+    todaymonthh="january"
+elif todaymonth ==2:
+    todaymonthh="february"
+elif todaymonth ==3:
+    todaymonthh="march"
+elif todaymonth ==4:
+    todaymonthh="april"
+elif todaymonth ==5:
+    todaymonthh="may"
+elif todaymonth ==6:
+    todaymonthh="june"
+elif todaymonth ==7:
+    todaymonthh="july"
+elif todaymonth ==8:
+    todaymonthh="august"
+elif todaymonth ==9:
+    todaymonthh="september"
+elif todaymonth ==10:
+    todaymonthh="october"
+elif todaymonth ==11:
+    todaymonthh="november"
+elif todaymonth ==12:
+    todaymonthh="december"
+    
+    
 if month == "october" and int(day) == 31:
     print ("You were born on Halloween! ")
+elif todaydate == int(day) and todaymonthh == month:
+    print ("Happy birthday! ")
 else: 
     print ("{0}, you are a {1} baby of the {2}. " .format(name,season,era))
     
