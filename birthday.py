@@ -42,6 +42,8 @@ year = input("And what year were you born in, {0}? " .format(name))
 day = input("And the day? ")
 month = month.lower()
 
+
+
 if month == "december" or month == "january" or month == "february":
     season = "winter"
 elif month == "march" or month == "april" or month == "may":
@@ -50,7 +52,7 @@ elif month == "june" or month == "july" or month == "august":
     season = "summer"
 elif month == "september" or month == "october" or month == "november":
     season = "fall"
-
+    
 if int(year) < 1980:
     era = "Stone Age"
 elif int(year) >= 1980 and int(year) <= 1989:
@@ -58,9 +60,13 @@ elif int(year) >= 1980 and int(year) <= 1989:
 elif int(year) >= 1990 and int(year) <= 1999:
     era = "nineties"
 elif int(year) >= 2000:
-    era = "two thousands"
+        era = "two thousands"
+        
 
-print ("{0}, you are a {1} baby of the {2}. " .format(name,season,era))
+if month == "october" and int(day) == 31:
+    print ("You were born on Halloween!")
+else: 
+    print ("{0}, you are a {1} baby of the {2}. " .format(name,season,era))
     
 
 
